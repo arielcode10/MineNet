@@ -1,0 +1,53 @@
+1. Authentication and User Management
+- [ ] Implement user registration – Allow users to create accounts with a username, email, and password.
+- [ ] Implement user login – Authenticate users using their account credentials.
+- [ ] Implement password hashing – Securely hash passwords before storing them in SQLite.
+- [ ] Implement logout – Allow users to log out and clear their active session.
+- [ ] Add input validation – Prevent invalid usernames, malformed emails, and weak passwords.
+- [ ] Prevent duplicate accounts – Ensure usernames and email addresses are unique.
+2. User Profiles
+- [ ] Create user profile screen – Display a user's profile information.
+- [ ] Implement profile editing – Allow users to update their username, biography, and profile picture.
+- [ ] Implement profile picture selection – Allow users to select an image from their device.
+- [ ] Display user statistics – Show the number of posts, followers, and following.
+3. Posts and Media
+- [ ] Implement text posts – Allow users to create and publish text-based posts.
+- [ ] Implement image posts – Allow users to attach images to posts.
+- [ ] Implement video posts – Allow users to upload and display videos stored locally.
+- [ ] Support multiple images per post – Allow a single post to contain multiple images.
+- [ ] Implement post deletion – Allow users to delete their own posts.
+- [ ] Implement post editing – Allow users to edit existing posts.
+- [ ] Implement media storage management – Store media files locally and maintain references to them in SQLite.
+4. Social Features
+- [ ] Implement follow functionality – Allow users to follow other users.
+- [ ] Implement unfollow functionality – Allow users to stop following other users.
+- [ ] Implement followers list – Display users following a particular account.
+- [ ] Implement following list – Display accounts followed by a particular user.
+- [ ] Implement likes – Allow users to like and unlike posts.
+- [ ] Implement comments – Allow users to comment on posts.
+- [ ] Implement comment deletion – Allow users to delete their own comments.
+5. Feed and Discovery
+- [ ] Implement home feed – Display posts from followed users.
+- [ ] Implement chronological sorting – Display the newest posts first.
+- [ ] Implement user search – Allow users to search for other accounts.
+- [ ] Implement Explore screen – Display posts and users outside the current user's following list.
+- [ ] Implement post details screen – Display a post and its associated comments.
+6. Notifications
+- [ ] Implement notification system – Generate notifications for likes, comments, and new followers.
+- [ ] Implement notifications screen – Display notifications to the user.
+- [ ] Implement notification read status – Track whether a notification has been viewed.
+7. Database and Security
+- [ ] Design SQLite database schema – Define tables and relationships between users, posts, comments, likes, and follows.
+- [ ] Implement database helper – Centralize database creation, queries, and updates.
+- [ ] Add database constraints – Prevent duplicate likes, duplicate follows, and invalid relationships.
+- [ ] Implement database migrations – Handle database schema changes between application versions.
+- [ ] Secure local user data – Protect sensitive information stored on the device.
+- [ ] Handle database errors – Prevent crashes caused by failed database operations.
+8. Testing and Quality Assurance
+- [ ] Test user registration and login – Verify valid and invalid authentication scenarios.
+- [ ] Test post creation and deletion – Verify that posts are correctly saved and removed.
+- [ ] Test follow and unfollow operations – Verify that follower relationships remain consistent.
+- [ ] Test likes and comments – Verify that interactions are correctly stored.
+- [ ] Test media handling – Verify that images and videos load correctly.
+- [ ] Test application lifecycle – Ensure data remains available after closing and reopening the application.
+- [ ] Test database consistency – Ensure related records remain consistent when users or posts are deleted.
