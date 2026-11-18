@@ -4,6 +4,7 @@
     <string name="sign_up">Sign Up</string>
     <string name="player_profile">Player Profile</string>
     <string name="logout">Logout</string>
+    <string name="change_profile">Change Profile</string>
     <string name="profile_avatar_desc">Profile Avatar</string>
     <string name="default_web_client_id" translatable="false">YOUR_WEB_CLIENT_ID</string>
 </resources>

@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.text.InputType;
 import android.text.TextUtils;
 import android.util.Log;
-import android.widget.Button;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Toast;
@@ -58,8 +58,8 @@ public class MainActivity extends AppCompatActivity {
 
         sharedPreferences = getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
 
-        Button btnLogin = findViewById(R.id.btnLogin);
-        Button btnSignUp = findViewById(R.id.btnSignUp);
+        View btnLogin = findViewById(R.id.btnLogin);
+        View btnSignUp = findViewById(R.id.btnSignUp);
 
         btnLogin.setOnClickListener(v -> showAuthDialog(true));
         btnSignUp.setOnClickListener(v -> showAuthDialog(false));
