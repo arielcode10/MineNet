@@ -2,5 +2,8 @@
     <string name="app_name">MineNet</string>
     <string name="login">Login</string>
     <string name="sign_up">Sign Up</string>
+    <string name="player_profile">Player Profile</string>
+    <string name="logout">Logout</string>
+    <string name="profile_avatar_desc">Profile Avatar</string>
     <string name="default_web_client_id" translatable="false">YOUR_WEB_CLIENT_ID</string>
 </resources>

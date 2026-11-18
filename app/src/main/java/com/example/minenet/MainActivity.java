@@ -1,6 +1,7 @@
 package com.example.minenet;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.InputType;
@@ -113,6 +114,7 @@ public class MainActivity extends AppCompatActivity {
                                 if (task.isSuccessful()) {
                                     FirebaseUser user = mAuth.getCurrentUser();
                                     Toast.makeText(MainActivity.this, "Firebase Login successful: " + (user != null ? user.getEmail() : email), Toast.LENGTH_SHORT).show();
+                                    navigateToProfile();
                                 } else {
                                     // Fallback to local authentication if Firebase reports configuration/internal error
                                     handleLocalAuth(email, isLogin);
@@ -124,6 +126,7 @@ public class MainActivity extends AppCompatActivity {
                                 if (task.isSuccessful()) {
                                     FirebaseUser user = mAuth.getCurrentUser();
                                     Toast.makeText(MainActivity.this, "Firebase Sign up successful: " + (user != null ? user.getEmail() : email), Toast.LENGTH_SHORT).show();
+                                    navigateToProfile();
                                 } else {
                                     // Fallback to local authentication if Firebase reports configuration/internal error
                                     handleLocalAuth(email, isLogin);
@@ -144,5 +147,11 @@ public class MainActivity extends AppCompatActivity {
         sharedPreferences.edit().putString(KEY_LOGGED_IN_USER, email).apply();
         String action = isLogin ? "Login successful" : "Sign up successful";
         Toast.makeText(MainActivity.this, action + " (Offline mode): " + email, Toast.LENGTH_SHORT).show();
+        navigateToProfile();
+    }
+
+    private void navigateToProfile() {
+        Intent intent = new Intent(MainActivity.this, UserProfile.class);
+        startActivity(intent);
     }
 }

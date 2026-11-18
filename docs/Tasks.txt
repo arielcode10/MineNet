@@ -1,11 +1,11 @@
-1. Authentication and User Management
+1. Authentication and User Management - Done!
 - [ ] Implement user registration – Allow users to create accounts with a username, email, and password.
 - [ ] Implement user login – Authenticate users using their account credentials.
 - [ ] Implement password hashing – Securely hash passwords before storing them in SQLite.
 - [ ] Implement logout – Allow users to log out and clear their active session.
 - [ ] Add input validation – Prevent invalid usernames, malformed emails, and weak passwords.
 - [ ] Prevent duplicate accounts – Ensure usernames and email addresses are unique.
-2. User Profiles
+2. User Profiles -
 - [ ] Create user profile screen – Display a user's profile information.
 - [ ] Implement profile editing – Allow users to update their username, biography, and profile picture.
 - [ ] Implement profile picture selection – Allow users to select an image from their device.
